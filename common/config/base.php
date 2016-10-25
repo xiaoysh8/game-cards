@@ -1,11 +1,12 @@
 <?php
 $config = [
-    'name'=>'Yii2 Starter Kit',
+    'name'=>'游戏点卡销售管理',
     'vendorPath'=>dirname(dirname(__DIR__)).'/vendor',
     'extensions' => require(__DIR__ . '/../../vendor/yiisoft/extensions.php'),
     'sourceLanguage'=>'en-US',
     'language'=>'en-US',
     'bootstrap' => ['log'],
+
     'components' => [
 
         'authManager' => [
@@ -146,14 +147,11 @@ $config = [
             require(Yii::getAlias('@storage/config/_urlManager.php'))
         )
     ],
+
     'params' => [
         'adminEmail' => env('ADMIN_EMAIL'),
         'robotEmail' => env('ROBOT_EMAIL'),
         'availableLocales'=>[
-            'en-US'=>'English (US)',
-            'ru-RU'=>'Русский (РФ)',
-            'uk-UA'=>'Українська (Україна)',
-            'es' => 'Español',
             'zh-CN' => '简体中文',
         ],
     ],

@@ -14,7 +14,7 @@ use yii\web\ForbiddenHttpException;
 class LoginForm extends Model
 {
     public $username;
-    public $password;
+    public $password;``
     public $rememberMe = true;
 
     private $user = false;
@@ -81,6 +81,7 @@ class LoginForm extends Model
 
         return false;
     }
+
 
     /**
      * Finds user by [[username]]
